@@ -1,16 +1,20 @@
-const TEMPLATE_ENGINE = 'liquid';
-
 module.exports = (eleventyConfig) => {
   return {
+    templateFormats: [
+      "md",
+      "njk",
+      "html",
+      "liquid"
+    ],
+    markdownTemplateEngine: "njk",
+    htmlTemplateEngine: "njk",
+    dataTemplateEngine: "njk",
     dir: {
         input: 'src',
         output: '_site',
+        data: '_data',
         includes: '_includes',
-        layout: '_layouts'
+        layout: '_includes/layouts'
     },
-    dataTemplateEngine: TEMPLATE_ENGINE,
-    markdownTemplateEngine: TEMPLATE_ENGINE,
-    htmlTemplateEngine: TEMPLATE_ENGINE,
-    templateFormats: ['html', 'md', TEMPLATE_ENGINE],
   };
 };
