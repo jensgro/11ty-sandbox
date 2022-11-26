@@ -5,7 +5,7 @@ title: "My index-page"
 
 {% block content %}
 
-{{ macro.h({
+{{ component.h({
   level: 2,
   text: "What a great headline"
 }) }}
