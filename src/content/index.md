@@ -1,5 +1,6 @@
 ---
 title: "My index-page"
+permalink: index.html
 ---
 {%- extends "layouts/base.njk" -%}
 

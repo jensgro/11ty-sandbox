@@ -1,4 +1,8 @@
 module.exports = (eleventyConfig) => {
+  eleventyConfig.addPassthroughCopy({
+    'src/assets/css/*.*': '/assets/css/*.*',
+    'src/assets/img/*.*': '/assets/img/*.*'
+  });
   return {
     templateFormats: [
       "md",
