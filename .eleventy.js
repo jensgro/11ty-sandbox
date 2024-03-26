@@ -1,6 +1,6 @@
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy({
-    'src/assets/css/*.*': '/assets/css/*.*',
+    'src/assets/css/main.css': '/assets/css/main.css',
     'src/assets/img/*.*': '/assets/img/*.*'
   });
   return {
