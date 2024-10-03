@@ -1,0 +1,22 @@
+---
+layout: layouts/base.njk
+title: CardListen-Testseite
+permalink: /lists.html
+bodyClass: page
+---
+
+<ol>
+{% for listitem in list %}
+    <li>{{ listitem.item }}</li>
+{% endfor %}
+</ol>
+
+<hr>
+
+<ol>
+{% for listitem in list %}
+{% if (loop.index <= 5) %}
+    <li>{{ listitem.item }}</li>
+{% endif %}
+{% endfor %}
+</ol>
