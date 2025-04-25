@@ -2,6 +2,7 @@
 title: "My index-page"
 permalink: index.html
 ---
+
 {%- extends "layouts/base.njk" -%}
 
 {% block content %}
@@ -10,5 +11,7 @@ permalink: index.html
   level: 2,
   text: "What a great headline"
 }) }}
+
+<browser-support data-feature="grid"></browser-support>
 
 {% endblock %}

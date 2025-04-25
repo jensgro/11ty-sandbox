@@ -5,6 +5,8 @@ permalink: /card.html
 bodyClass: page
 ---
 
+<browser-support data-feature="container-queries"></browser-support>
+
 
 {% for image in images %}
 {% if (loop.index <= 5) %}
@@ -18,3 +20,4 @@ bodyClass: page
     </div>
 {% endif %}
 {% endfor %}
+
