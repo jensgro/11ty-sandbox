@@ -2,6 +2,7 @@
 title: "My index-page"
 permalink: index.html
 ---
+
 {%- extends "layouts/base.njk" -%}
 
 {% block content %}
@@ -11,4 +12,5 @@ permalink: index.html
   text: "What a great headline"
 }) }}
 
+{% compat "flexbox" %}
 {% endblock %}
