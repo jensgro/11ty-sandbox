@@ -20,3 +20,10 @@ bodyClass: page
 {% endif %}
 {% endfor %}
 </ol>
+
+
+<ul>
+{% for n in navigation %}
+    <li><a href="{{n.url}}">{{n.item}}</a></li>
+{% endfor %}
+</ul>
