@@ -12,6 +12,8 @@ permalink: index.html
   text: "What a great headline"
 }) }}
 
+{{ component.demolist({i:6}) }}
+
 <browser-support data-feature="grid"></browser-support>
 <browser-support data-feature="shadow-dom"></browser-support>
 <browser-support data-feature="scroll-snap"></browser-support>

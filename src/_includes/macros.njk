@@ -1,11 +1,20 @@
 {%- macro h(params) -%}
-    <h{{params.level}}{%- if params.class %} class="{{params.class}}"{% endif -%}>
-        {%- if params.link -%}
-            <a href="{{params.link}}">
-        {%- endif -%}    
-            {{params.text}}
-        {%- if params.link -%}
-            </a>
-        {%- endif -%}    
-    </h{{params.level}}>
+  <h{{ params.level }} {%- if params.class %} class="{{ params.class }}" {% endif -%}>
+    {%- if params.link -%}
+      <a href="{{ params.link }}">
+      {%- endif -%}
+      {{ params.text }}
+      {%- if params.link -%}
+      </a>
+    {%- endif -%}
+  </h{{ params.level }}>
+{%- endmacro -%}
+{%- macro demolist(params) -%}
+  <ol class="demolist">
+    {% for i in params.i %}
+      <li>
+        <span>{{ i }}</span>
+      </li>
+    {% endfor %}
+  </ol>
 {%- endmacro -%}
